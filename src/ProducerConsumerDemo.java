@@ -8,6 +8,7 @@ public class ProducerConsumerDemo {
         new SoupConsumer(servingLine).start();
         new SoupConsumer(servingLine).start();
         new SoupProducer(servingLine).start();
+
     }
 
 }

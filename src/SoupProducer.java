@@ -18,8 +18,8 @@ public class SoupProducer extends Thread {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            servingLine.add("no soup for you!");
-            servingLine.add("no soup for you~!");
         }
+        servingLine.add("no soup for you!");
+        servingLine.add("no soup for you~!");
     }
 }
