@@ -1,0 +1,24 @@
+@startuml
+
+class MyClass {
+- int count
+--
+# int number
+..[Strings]..
++ String name
+--
+~ method1()
+method2()
+}
+
+class SecondClass {
+int aSecretField
+void secretMethod()
+}
+note left : this class is\n a secretClass
+
+MyClass <|-- SecondClass
+MyClass <..... ThirdClass
+MyClass <-left- FourthClass
+
+@enduml

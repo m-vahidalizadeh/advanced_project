@@ -1,0 +1,13 @@
+@startuml
+
+class House{}
+note right : This is our house
+
+House ||--o{ Room
+House ||--o{ Garage
+Room <-- Kitchen
+Room <-- Bathroom
+Room <-- Bedroom
+Garage ||--o{ Car
+
+@enduml

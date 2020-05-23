@@ -1,0 +1,7 @@
+@startuml
+
+class Pond{}
+
+Pond ||--o{ Duck
+
+@enduml
