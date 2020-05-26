@@ -1,2 +1,2 @@
 Manifest-Version: 1.0
-Main-Class: java14.Application
+Main-Class: java_versions.java14.Application

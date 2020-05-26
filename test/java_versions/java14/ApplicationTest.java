@@ -1,7 +1,9 @@
-package java14;
+package java_versions.java14;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import java_versions.java14.Application;
 
 public class ApplicationTest {
 
