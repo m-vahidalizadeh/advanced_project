@@ -1,0 +1,14 @@
+b
+short sh=1;
+int i=1;
+var v=1;
+var longValue=3_000_000_000L;
+var floatValue=3000000000.3434f;
+floatValue
+System.out.println("the value of floatValue is "+floatValue);
+byte b=127;
+b
+if(b<Byte.MAX_VALUE){
+b++;
+}
+b

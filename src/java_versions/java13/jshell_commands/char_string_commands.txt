@@ -1,0 +1,10 @@
+char c1='1';
+var c2='2';
+var c3='3';
+char dollar='\u0024';
+c1='a';
+c1='a';
+var upper=Character.toUpperCase(c1);
+char[] chars={'h','e','l','l','o'};
+String s=new String(chars);
+var charArray=s.toCharArray();

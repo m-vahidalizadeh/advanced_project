@@ -1,0 +1,4 @@
+short sh =100;
+int i=sh;
+long longValue=i;
+short shortValue=(short) longValue;
