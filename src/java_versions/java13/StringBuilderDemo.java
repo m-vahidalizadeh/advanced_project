@@ -1,6 +1,6 @@
 package java_versions.java13;
 
-public class Main {
+public class StringBuilderDemo {
 
     public static void main(String[] args) {
         /*
@@ -25,7 +25,12 @@ mohammadvahidalizadehdizaj@Mohammads-MBP src % java java_versions.java13.Main Mo
 Hello from Java, Mohammad!
 
          */
-        System.out.println("Hello from Java, " + args[0] + "!");
+//        System.out.println("Hello from Java, " + args[0] + "!");
+        // JShell output
+        var sb = new StringBuilder();
+        sb.append("Welcome");
+        sb.append(" to New York!");
+        System.out.println(sb);
     }
 
 }

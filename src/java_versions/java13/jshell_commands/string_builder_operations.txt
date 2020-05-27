@@ -1,0 +1,7 @@
+var sb=new StringBuilder();
+sb.append(" to California!");
+sb=new StringBuilder();
+sb.append("Welcome");
+sb.append(" to New York!");
+StringBuilder b=new StringBuilder();
+b.append("Shirt size: ").append("M").append(", Qty: ").append(4);

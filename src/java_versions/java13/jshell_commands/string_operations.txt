@@ -1,0 +1,10 @@
+String s1="This is a String!";
+var s2="This is another String!";
+var s3=new String("This is also a String!");
+var chars=s1.toCharArray();
+String s4="Shirt size: ";
+String s5="M";
+String s6=s4+s5+", very elegant";
+var upper=s6.toUpperCase();
+var charAt=s6.charAt(4);
+var bytes=s6.getBytes();
