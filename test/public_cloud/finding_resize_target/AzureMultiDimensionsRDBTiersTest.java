@@ -1,8 +1,10 @@
-package public_cloud;
+package public_cloud.finding_resize_target;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import public_cloud.finding_resize_target.AzureMultiDimensionsRDBTiers;
+import public_cloud.finding_resize_target.AzureRDBTiers;
 
 public class AzureMultiDimensionsRDBTiersTest {
 

@@ -1,4 +1,4 @@
-package public_cloud;
+package public_cloud.finding_resize_target;
 
 public class AzureRDBTierThresholds {
 
