@@ -1,12 +1,16 @@
-package parallelism.concurrent_programming;
+package concurrent_programming;
 
-public class DataRaceDemo {
+public class SynchronizedMethodDemo {
 
     static class Shopper extends Thread {
         static int garlicCount = 0;
 
+        private static synchronized void addGarlic() {
+            garlicCount++;
+        }
+
         public void run() {
-            for (int i = 0; i < 10_000_000; i++) garlicCount++;
+            for (int i = 0; i < 10_000_000; i++) addGarlic();
         }
     }
 

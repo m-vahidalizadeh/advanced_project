@@ -1,4 +1,4 @@
-package parallelism.concurrent_programming;
+package concurrent_programming;
 
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.ThreadLocalRandom;

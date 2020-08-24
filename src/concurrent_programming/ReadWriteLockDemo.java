@@ -1,4 +1,4 @@
-package parallelism.concurrent_programming;
+package concurrent_programming;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;

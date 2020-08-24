@@ -1,4 +1,4 @@
-package parallelism.concurrent_programming;
+package concurrent_programming;
 
 public class ExecutionSchedulingDemo {
 

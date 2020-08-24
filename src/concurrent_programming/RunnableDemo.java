@@ -1,8 +1,9 @@
-package parallelism.concurrent_programming;
+package concurrent_programming;
 
-public class ThreadLifecycleDemo {
+public class RunnableDemo {
 
-    static class ChefMahnaz extends Thread {
+    static class ChefMahnaz implements Runnable {
+        @Override
         public void run() {
             System.out.println("Mahnaz started and waiting for sausage to thaw...");
             try {
@@ -16,7 +17,7 @@ public class ThreadLifecycleDemo {
 
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Mohammad started and requesting Mahnaz's help.");
-        Thread mahnaz = new ChefMahnaz();
+        Thread mahnaz = new Thread(new ChefMahnaz());
         System.out.println(" Mahnaz state: " + mahnaz.getState());
 
         System.out.println("Mohammad tells Mahnaz to start.");
