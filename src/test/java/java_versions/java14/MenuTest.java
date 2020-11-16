@@ -1,10 +1,11 @@
 package java_versions.java14;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import java_versions.java14.Menu;
 import java.math.BigDecimal;
+
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class MenuTest {
 
@@ -13,7 +14,7 @@ public class MenuTest {
     @Test
     public void testGetFormattedItem() {
         Menu menu = new Menu("Grilled chicken", new BigDecimal(3.45));
-        Assertions.assertEquals(EXPECTED_MENU_FORMATTED_ITEM, menu.getFormattedItem());
+        assertThat(menu.getFormattedItem(), is(EXPECTED_MENU_FORMATTED_ITEM));
     }
 
 }

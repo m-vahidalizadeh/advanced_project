@@ -1,8 +1,9 @@
 package deep_dive;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 /**
  * To make these tests pass, you will need to create a Minion class with the member variables below.
@@ -22,14 +23,14 @@ public class MinionTest {
     @Test
     public void testConstructor() {
         Minion stuart = new Minion("Stuart", 1, "yellow", "");
-        assertEquals("Stuart", stuart.getName());
-        assertEquals(1, stuart.getEyes());
-        assertEquals("yellow", stuart.getColor());
+        assertThat(stuart.getName(), is("Stuart"));
+        assertThat(stuart.getEyes(), is(1));
+        assertThat(stuart.getColor(), is("yellow"));
 
         Minion dave = new Minion("Dave", 2, "yellow", "");
-        assertEquals("Dave", dave.getName());
-        assertEquals(2, dave.getEyes());
-        assertEquals("yellow", dave.getColor());
+        assertThat(dave.getName(), is("Dave"));
+        assertThat(dave.getEyes(), is(2));
+        assertThat(dave.getColor(), is("yellow"));
     }
 
     @Test
@@ -37,10 +38,10 @@ public class MinionTest {
         Minion stuart = new Minion("Stuart", 1, "yellow", "");
 
         stuart.setMaster("T. Rex");
-        assertEquals("T. Rex", stuart.getMaster());
+        assertThat(stuart.getMaster(), is("T. Rex"));
 
         stuart.setMaster("Napoleon");
-        assertEquals("Napoleon", stuart.getMaster());
+        assertThat(stuart.getMaster(), is("Napoleon"));
     }
 
 }
