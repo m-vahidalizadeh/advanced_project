@@ -9,8 +9,5 @@
         <module name="advanced_java" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="advanced_java" target="19" />
-    </bytecodeTargetLevel>
   </component>
 </project>

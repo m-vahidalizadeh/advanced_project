@@ -1,4 +1,9 @@
 package java17;
 
-public non-sealed class Coffee extends Beverage {
+public final class Coffee extends Beverage {
+
+    public void addCream() {
+        System.out.println("Add cream to coffee.");
+    }
+
 }
